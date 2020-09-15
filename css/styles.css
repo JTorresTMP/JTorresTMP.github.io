@@ -75,12 +75,17 @@ ul > li > p > a {
 }
 
 .navbar {
-    background-color: mediumaquamarine;
+    background-color: #64DFDF; /*mediumaquamarine */
 }
-/* #footerContainer {}  In case I want to edit something*/
 
 
+#cardOverlayContainer {
+    background-color: #574AE2;
+}
 
+#footerContainer {
+    background-color: #73B1FC;
+} 
 /* I will keep this commented out for Accessibility Reasons */
 /* button:focus {
     outline: none !important;
