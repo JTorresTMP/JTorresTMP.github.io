@@ -91,9 +91,9 @@ ul > li > p > a {
     color: white;
 } 
 /* I will keep this commented out for Accessibility Reasons */
-/* button:focus {
+button:focus {
     outline: none !important;
-}; */
+};
 
 
 
