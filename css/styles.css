@@ -70,12 +70,12 @@ h2 {
 
 ul > li > p > a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: normal;
 }
 
 .navbar {
-    background-color: #64DFDF; /*mediumaquamarine */
+    background-color: #1c2237; /*mediumaquamarine   #64DFDF*/
 }
 
 
@@ -84,7 +84,8 @@ ul > li > p > a {
 } */
 
 #footerContainer {
-    background-color: #73B1FC;
+    background-color: #1c2237;
+    color: white;
 } 
 /* I will keep this commented out for Accessibility Reasons */
 /* button:focus {
