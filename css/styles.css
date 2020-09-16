@@ -78,6 +78,9 @@ ul > li > p > a {
     background-color: #1c2237; /*mediumaquamarine   #64DFDF*/
 }
 
+#indexJumbotronContainer, .jumbotron {
+    background-color: #fff;
+}
 
 /* #cardOverlayContainer {
     background-color: #574AE2;
