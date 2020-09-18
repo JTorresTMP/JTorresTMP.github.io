@@ -131,3 +131,25 @@ button:focus {
         column-count: 4;
     }
 }
+
+/* Thank you FCC */
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+.theFooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 2.5rem;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-line;
+}
