@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Quicksand&family=Sarabun:wght@700&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Code_Now</title>
+</head>
+<body>
+    <div class="container-fluid mx-0 px-0 sticky-top" id="navContainer">
+        <div id="outerNav" class="shadow-lg mb-4">
+            <nav class="navbar navbar-expand-md navbar-light sticky-top mt-0 pb-3">
+                <button class="navbar-toggler mr-2 pt-3" type="button" data-toggle="collapse" data-target="#topNav">
+                    <i class="fa fa-bars text-white fa-lg"></i>
+                </button>
+                <a href="../index.html" class="navbar-brand mr-auto pt-3 text-white">Code_Now</a>
+
+                <div class="collapse navbar-collapse" id="topNav">
+                    <ul class="navbar-nav pt-3">
+                        <li class="nav-item ml-5" id="catNav">
+                            <a href="./catalog.html" class="nav-link text-white">Catalog</a>
+                        </li>
+                        <li class="nav-item ml-5" id="blogNav">
+                            <a href="" class="nav-link text-white">Blog</a>
+                        </li>
+                        <li class="nav-item ml-5" id="aboutNav">
+                            <a href="" class="nav-link text-white">About</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto pt-3" id="userAuthUL">
+                        <li class="nav-item">
+                            <a href="#" type="button" class="btn btn-outline-dark mr-3 text-white" id="loginButton">Log In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" type="button" class="btn btn-warning" id="signUpButton">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Going to make this a modal -->
+    <!-- <div class="container" id="mainContainer">
+        <div class="row no-gutters">
+            <div class="col-lg-7" id="loginFormCol">
+                <div class="col-md-10 offset-md-1 offset-lg-2 align-self-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Get Started For Free</h5>
+                        <div class="card mx-auto" style="max-width: 450px;">
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="text-left">Email Address</label>
+                                        <input type="email" class="form-control" id="inputEmail" placeholder="E.g. jtorres@gmail.com">
+                                        <small class="form-text text-muted text-left">This information is confidential</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="text-left">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="optMarketing">
+                                        <label for="optMarketing" class="form-check-label text-muted">Opt me out of Newsletter and promotions.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-success btn-block mt-3">Let's Go</button>
+                                    <div class="form-group">
+                                        <small>By signing up, you agree to our 
+                                            <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <p>Or, use another account to sign in:</p>
+                                        <ul class="list-unstyled list-group list-group-horizontal">
+                                            <li>
+                                                <button class="btn border border-dark mr-2" id='googleIcon'>
+                                                    <i class="fa fa-google fa-lg"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="btn border border-dark mr-2" id="appleIcon">
+                                                    <i class="fa fa-apple fa-lg"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="btn border border-dark mr-2" id="githubIcon">
+                                                    <i class="fa fa-github fa-lg"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="btn border border-dark mr-2" id="linkedinIcon">
+                                                    <i class="fa fa-linkedin fa-lg"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-5 mx-auto text-center">
+                <h1>Let, Const, and Var</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5 mx-auto text-center">
+                <p>By Jose Torres</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-9 mx-auto text-left">
+                <hr>
+                <h2 style="font-size: larger;">
+                    Introduction
+                </h2>
+                <p>
+                    In JavaScript there are three main ways to declare a 
+                    variable, and until ES6 in 2015 the keyword <code>var</code>
+                    was the only way to declare variables. This article aims to
+                    help you understand the differences and when you would use
+                    one keyword over the other.
+                </p>
+                <h2>
+                    The 'var' Keyword
+                </h2>
+                <p>
+                    The <code>var</code> keyword is somewhat of a relic of the past. It
+                    is very similar to the <code>let</code> keyword, with a few minor
+                    exceptions. As you may already know, variables are confined to the
+                    scope in which they are declared in. For instance, in this example
+                    code: 
+                    <pre>
+                        <code>
+                            var myVar = 'John';
+
+                            function logVar () {
+                                console.log(myVar)
+                            }
+
+                            logVar() //'John'
+                        </code>
+                    </pre>
+                    the variable var is declared in the global scope, thus it is able to be
+                    called anywhere even inside the function. Another important thing is that
+                    <code>var</code> is globally scoped by default unless it is declared in a
+                    function, in which case it is function scoped.
+                </p>
+                <h2>
+                    The 'let' Keyword
+                </h2>
+                <p>
+                    The <code>let</code> keyword is similar to the <code>var</code> keyword in 
+                    almost every way, except that it is block-scoped. Note the difference in
+                    wording. A block of code is any code encased by curly braces <code>{}</code>.
+                    So any variable declared using the <code>let</code> keyword will only be visible
+                    inside its respective block. This is why <code>for</code> loops commonly use let
+                    when they are used.
+                    <pre>
+                    <code>
+                        for (let i = 0; i < 10; i++) {
+                            ... 
+                        }
+                    </code>
+                    </pre>
+                </p>
+                <h2>
+                    The 'const' Keyword
+                </h2>
+                <p>
+                    Const stands for constant. This keyword follows the same scope rules as <code>let</code>,
+                    that is, it is block-scoped. The main difference is that the value assigned at declaration
+                    to a <code>const</code> variable cannot be changed. If you try to assign another value,
+                    JavaScript will throw an error.
+                    <pre>
+                        <code>
+                            const name = 'Joseph';
+
+                            name = 'Matt' //This line will give you an error
+                        </code>
+                    </pre>
+                </p>
+                <h2>
+                    When to Use One Over the Other?
+                </h2>
+                <p>
+                    For the most part, using <code>let</code> anywhere you would use <code>var</code>
+                    will be better. You will run into less errors over time by using let. Use const
+                    if you do not want the value of your variable to change accidentally. One common use
+                    of const is to define arrow functions like so: 
+                    <pre>
+                        <code>
+                            const whateverFunction = () => {
+                                //do something
+                            }
+                        </code>
+                    </pre>
+                    If the above code confuses you, please head over to our article on <a href="#">arrow
+                    functions.</a> We hope you understand now the differences between the three keywords
+                    used to declare a variable and the reasons when you would use one over the other.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="container-fluid mt-5 border-top" id="footerContainer">
+        <div class="row pt-4">
+            <div class="col-2">
+                <p class="footer-titles">Code_Now</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>About</p>
+                    </li>
+                    <li>
+                        <p class="text-nowrap">Sign In</p>
+                    </li>
+                    <li>
+                        <p>Social</p>
+                    </li>
+                    <li>
+                        <div class="btn-toolbar" role="toolbar">
+                            <div class="btn-group" role="group">
+                                <button class="btn btn-outline-light border-0" type="button">
+                                    <i class="fa fa-twitter"></i>
+                                </button>
+                                <button class="btn btn-outline-light border-0" type="button">
+                                    <i class="fa fa-instagram"></i>
+                                </button>
+                                <button class="btn btn-outline-light border-0" type="button">
+                                    <i class="fa fa-youtube-play"></i>
+                                </button>
+                                <button class="btn btn-outline-light border-0" type="button">
+                                    <i class="fa fa-stack-overflow"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col offset-lg-1 d-none d-lg-block">
+                <p class="footer-titles">Catalog</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <p>Data Types</p>
+                    </li>
+                    <li>
+                        <p>Recursion and Iteration</p>
+                    </li>
+                    <li>
+                        <p>Objects and Their Methods</p>
+                    </li>
+                    <li>
+                        <a href="routes/catalog.html" class="text-reset" style="text-decoration: none;">Click for More...</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col text-right d-none d-md-block">
+                <p class="footer-titles">Additional Resources</p>
+                <ul class="list-unstyled">
+                    <li>
+                        <p><a href="https://javascript.info/" target="_blank">JavaScript.info</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://realpython.com/" target="_blank">RealPython.com</a></p>
+                    </li>
+                    <li>
+                        <p><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- <script src="js/app.js"></script> --> <!--In case I need to use jQuery, but I doubt it-->
+</body>
+</html>
